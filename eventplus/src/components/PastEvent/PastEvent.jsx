@@ -11,6 +11,7 @@ import { Link, useParams } from "react-router-dom";
 const PastEvent = ({ title, description, eventDate, idEvent }) => {
 
   const {idEvento} = useParams();
+  
   return (
     <article className="event-card">
       <h2 className="event-card__title">{title}</h2>
@@ -32,7 +33,7 @@ const PastEvent = ({ title, description, eventDate, idEvent }) => {
       </p>
 
       <Link
-      to={`/detalhes-evento/${idEvento}`}
+      to={`detalhes-evento/${idEvento}`}
       className="event-card__connect-link" >
         Visualizar     
       </Link>
